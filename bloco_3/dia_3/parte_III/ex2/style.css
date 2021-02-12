@@ -3,21 +3,42 @@ div:hover{
 }
 
 div:nth-of-type(1){
-    background-color: aquamarine;
+    background-color: blue;
 }
 
 div:nth-of-type(2){
-    background-color: burlywood;
+    background-color: orange;
 }
 
 div:nth-of-type(3){
-    background-color: cornflowerblue;
+    background-color: purple;
 }
 
 div:nth-of-type(4){
-    background-color: cyan;
+    background-color: darkblue;
 }
 
 div:nth-of-type(5){
-    background-color: crimson;
+    background-color: antiquewhite;
 }
+
+div:nth-of-type(1) h3{
+   color: antiquewhite;
+}
+
+div:nth-of-type(2) h3{
+    text-align: center;
+ }
+
+ div:nth-of-type(3) h3{
+   line-height: 2;
+ }
+
+ div:nth-of-type(4) h3{
+    color: white;
+ }
+
+ div:nth-of-type(5) h3{
+    text-align: right;
+ }
+
