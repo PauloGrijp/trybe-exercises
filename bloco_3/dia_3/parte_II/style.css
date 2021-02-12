@@ -2,12 +2,13 @@
     position: absolute;
     top: 270px;
     left: 200px;
+    margin-bottom: 50px;
 }
 
 p{
     position: absolute; 
-    top: 1750px;
-    left: 50px;
+    top: 1790px;
+    left: 110px;
     z-index: 2;
 }
 
@@ -18,4 +19,6 @@ p{
 
 .baloon{
     position: absolute;
+    margin: 50px;
+    z-index: 1;
 }
