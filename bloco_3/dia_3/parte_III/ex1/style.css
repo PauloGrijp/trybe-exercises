@@ -9,3 +9,7 @@ ol li:hover{
 ol li:active{
     color: rgb(24, 21, 230);
 }
+
+ul li{
+    list-style: none;
+}
