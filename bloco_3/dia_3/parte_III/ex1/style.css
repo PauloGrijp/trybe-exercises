@@ -1,0 +1,11 @@
+h1, p{
+    text-align: center;   
+}
+
+ol li:hover{
+    background-color: aquamarine;
+}
+
+ol li:active{
+    color: rgb(24, 21, 230);
+}
