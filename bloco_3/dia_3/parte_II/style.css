@@ -4,3 +4,18 @@
     left: 200px;
 }
 
+p{
+    position: absolute; 
+    top: 1750px;
+    left: 50px;
+    z-index: 2;
+}
+
+.bowser{
+    position: absolute;
+    left: 300px;
+}
+
+.baloon{
+    position: absolute;
+}
