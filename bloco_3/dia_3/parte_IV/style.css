@@ -1,0 +1,68 @@
+ol li{
+    background-color: yellow;
+}
+
+ol li:nth-of-type(2n){
+    color: green;
+}
+
+.num-primo{
+    text-transform: uppercase;
+}
+
+:is(h1,h2,h3,h4,h5,h6){
+    color: red;
+}
+
+:is(h1,h2,h3,h4,h5,h6) em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.color-li{
+    color: blue;
+}
+
+li[title='java']{
+    background-color: pink;
+}
+
+.sites li:nth-of-type(1) a:hover{
+    color: orange;
+    font-weight: bold;
+}
+
+.sites li:nth-of-type(2) a:hover{
+    color: green;
+    font-weight: bold;
+}
+
+.sites li:nth-of-type(3) a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+.sites li:nth-of-type(4) a:hover{
+    color: yellow;
+    font-weight: bold;
+}
+
+.sites li:nth-of-type(5) a:hover{
+    color: green;
+    font-weight: bold;
+}
+/* 
+
+ - (Bônus) Para cada link na lista de aliados da pessoa desenvolvedora, faça com que ao passar o mouse sobre cada um, o texto fique em negrito e assuma a cor de fonte "temática do site"
+  Dica 1: Utilize o seletor :hover para controlar o passar do mouse.
+  Dica 2: Sugestão de cores padrão. StackOverflow (laranja), W3Schools (verde), MDN (preta), DevDocs (amarela), Trybe (verde).
+
+*/
