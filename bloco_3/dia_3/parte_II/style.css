@@ -1,24 +1,29 @@
 .super-mario{
-    position: absolute;
-    top: 270px;
-    left: 200px;
-    margin-bottom: 50px;
+    width: 100px;
+    display: block;
 }
 
-p{
-    position: absolute; 
-    top: 1790px;
-    left: 110px;
-    z-index: 2;
-}
-
-.bowser{
-    position: absolute;
-    left: 300px;
+.goomba{
+    width: 100px;
+    display: block;
 }
 
 .baloon{
+    
+    margin-top:20px ;
+}
+
+p{
     position: absolute;
-    margin: 50px;
-    z-index: 1;
+    top: 455px;
+    left: 60px;
+   
+}
+
+.bowser{
+    width: 300px;
+    position: absolute;
+    top: 420px;
+    left: 280px;
+    z-index: -1;
 }
