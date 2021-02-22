@@ -105,7 +105,35 @@ article h2{
   border-radius: 5px;
 }
 
+aside {
+  padding: 20px 2%;
+  text-align: center;
+  border: 2px solid #f4d160;
+  background-color: #f4d160;
+  width: 500px;
+  margin: 20px auto;
+  border-radius: 20px;
+}
 
+aside a{
+  text-decoration: none;
+  color: black;  
+}
+
+aside a:hover{
+  background-color: #28527a;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+footer{
+  background-color: #28527a;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8em;
+}
 
 
 
