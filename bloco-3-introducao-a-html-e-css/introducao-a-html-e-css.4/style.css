@@ -6,12 +6,18 @@
 body{
   background-color: #e0e0e0;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+p{
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 header{
   background-color: #28527a;
   color: #FFF;
-  padding: 20px 2%;
+  padding: 20px 2%;  
 }
 
 header nav{
@@ -35,3 +41,43 @@ header nav ul li a:hover{
   border-radius: 5px;
   color: #28527a;
 }
+
+
+main h2, h3{
+  color: #28527a;
+  margin: 20px 0;
+}
+
+main strong{
+  color: #28527a;
+}
+
+article h2{
+   padding: 0 2%;
+}
+.informacao-geral{
+  padding: 20px 2%;
+}
+
+.informacao-geral table{
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #28527a;
+}
+
+.informacao-geral img{
+  width: 250px;
+  height: 204px;
+}
+
+.fact-1{
+  background-color: #8ac4d0;
+  padding: 20px 2%;
+}
+
+.fact-2{
+  padding: 20px 2%;
+}
+
+
+
