@@ -27,3 +27,7 @@ function moreRepeated(numbers) {
 }
 
 console.log(moreRepeated([2, 3, 2, 5, 8, 2, 3])); //2
+
+//REFERENCIA
+
+//Gabarito
