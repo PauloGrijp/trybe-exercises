@@ -1,17 +1,3 @@
-// | I   | 1    |
-// | --- | ---- |
-// | IV  | 4    |
-// | V   | 5    |
-// | IX  | 9    |
-// | X   | 10   |
-// | XL  | 40   |
-// | L   | 50   |
-// | XC  | 90   |
-// | C   | 100  |
-// | CD  | 400  |
-// | D   | 500  |
-// | CM  | 900  |
-// | M   | 1000 |
 
 function convertsRomAlgo(romanAlgorithm){
 
@@ -26,16 +12,19 @@ function convertsRomAlgo(romanAlgorithm){
   };
   
   let sum = 0;
+  let num = [];
 
-  for(let key in romaAlgo){
-    for(let index in romanAlgorithm){
+  for (let index = 0; index < romanAlgorithm.length; index += 1){   
+    for(let key in romaAlgo){
       if(romanAlgorithm[index] == key){
-        sum += romaAlgo[key];
-      }      
+        
+      }
     }
   }
-  return sum;
 
+  
+  return sum
+  
 }
 
-console.log(convertsRomAlgo('XXXII'))
+console.log(convertsRomAlgo('IX'))
