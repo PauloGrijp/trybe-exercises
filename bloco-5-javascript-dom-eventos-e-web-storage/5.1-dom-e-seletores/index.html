@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>        
+        // - document.getElementById()
+        // - document.getElementsByClassName()
+        // - document.getElementsByTagName()
+      modTagP(); 
+      changeColorGreen(); 
+      changeColorWhite();
+      correctionH1();
+      upperCaseTagP();
+      viewConsole();
+      function modTagP(){
+        const tagP = document.getElementsByTagName('p')[1];
+        tagP.innerText = 'Daqui a dois anos, estarei morando na Europa.';
+      }       
+        
+      function changeColorGreen(){
+        const mainContent = document.getElementsByClassName('main-content')[0];
+        mainContent.style.backgroundColor = 'rgb(76,164,109)';
+      }  
+      
+      function changeColorWhite(){
+        const centerContent = document.getElementsByClassName('center-content')[0];
+        centerContent.style.backgroundColor = 'white';
+      }
+
+      function correctionH1(){
+        const tagH1 = document.getElementsByClassName('title')[0];
+        tagH1.innerText = 'Exercício 5.1 - JavaScript';
+      }
+
+      function upperCaseTagP(){
+        const tagsPs = document.getElementsByTagName('p');
+        for(let index = 0; index < tagsPs.length; index += 1){
+          tagsPs[index].style.textTransform = 'uppercase';
+        }
+      }     
+      
+      function viewConsole(){
+        const tagsPs = document.getElementsByTagName('p');
+        for(let index = 0; index < tagsPs.length; index += 1){
+          console.log(tagsPs[index].innerText)
+        }
+      }
+        
+    </script>
+  </body>
+</html>
