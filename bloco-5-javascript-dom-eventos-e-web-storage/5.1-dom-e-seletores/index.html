@@ -46,6 +46,7 @@
       changeColorGreen(); 
       changeColorWhite();
       correctionH1();
+      upperCaseTagP();
       function modTagP(){
         const tagP = document.getElementsByTagName('p')[1];
         tagP.innerText = 'Daqui a dois anos, estarei morando na Europa.';
@@ -65,10 +66,16 @@
         const tagH1 = document.getElementsByClassName('title')[0];
         tagH1.innerText = 'Exercício 5.1 - JavaScript';
       }
-      
+
+      function upperCaseTagP(){
+        const tagsPs = document.getElementsByTagName('p');
+        for(let index = 0; index < tagsPs.length; index += 1){
+          tagsPs[index].style.textTransform = 'uppercase';
+        }
+      }
         
        
-        // Crie uma função que corrija o texto da tag <h1>.
+        
         // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         
