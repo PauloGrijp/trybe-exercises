@@ -42,11 +42,17 @@
         // - document.getElementById()
         // - document.getElementsByClassName()
         // - document.getElementsByTagName()
-      modTagP();  
+      modTagP(); 
+      changeColorGreen(); 
       function modTagP(){
         const tagP = document.getElementsByTagName('p')[1];
         tagP.innerText = 'Daqui a dois anos, estarei morando na Europa.';
-      }              
+      }       
+        
+      function changeColorGreen(){
+        const mainContent = document.getElementsByClassName('main-content')[0];
+        mainContent.style.backgroundColor = 'rgb(76,164,109)';
+      }       
         // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
         // Crie uma função que mude a cor do quadrado vermelho para branco.
         // Crie uma função que corrija o texto da tag <h1>.
