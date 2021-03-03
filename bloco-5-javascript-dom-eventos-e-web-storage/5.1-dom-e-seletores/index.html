@@ -47,6 +47,7 @@
       changeColorWhite();
       correctionH1();
       upperCaseTagP();
+      viewConsole();
       function modTagP(){
         const tagP = document.getElementsByTagName('p')[1];
         tagP.innerText = 'Daqui a dois anos, estarei morando na Europa.';
@@ -72,12 +73,14 @@
         for(let index = 0; index < tagsPs.length; index += 1){
           tagsPs[index].style.textTransform = 'uppercase';
         }
+      }     
+      
+      function viewConsole(){
+        const tagsPs = document.getElementsByTagName('p');
+        for(let index = 0; index < tagsPs.length; index += 1){
+          console.log(tagsPs[index].innerText)
+        }
       }
-        
-       
-        
-        // Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-        // Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         
     </script>
   </body>
