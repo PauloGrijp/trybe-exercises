@@ -19,7 +19,14 @@ function days(){
   
   for(let index of dezDaysList){
     const listDays_li = document.createElement('li');
+    listDays_li.className = 'day';
     listDays_li.innerText = index;
+    if (index === 24 || index === 25 || index === 31) {
+      listDays_li.classList.add('holiday');
+    }
+    if (index === 4 || index === 11 || index === 18 || index === 25) {
+      listDays_li.classList.add('friday');
+    }
     days_ul.appendChild(listDays_li);
   }; 
 };
@@ -31,5 +38,9 @@ function holiday(feriados){
   btnHoliday.id = 'btn-holiday';
   btnHoliday.innerText = feriados;
   buttonsContainer.appendChild(btnHoliday);
+
+  btnHoliday.addEventListener('click', function () {
+    
+  })
 };
 holiday('Feriados');
