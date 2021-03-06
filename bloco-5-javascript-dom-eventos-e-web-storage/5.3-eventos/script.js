@@ -21,7 +21,15 @@ function days(){
     const listDays_li = document.createElement('li');
     listDays_li.innerText = index;
     days_ul.appendChild(listDays_li);
-  } 
-}
-
+  }; 
+};
 days()
+
+function holiday(feriados){
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const btnHoliday = document.createElement('button'); 
+  btnHoliday.id = 'btn-holiday';
+  btnHoliday.innerText = feriados;
+  buttonsContainer.appendChild(btnHoliday);
+};
+holiday('Feriados');
