@@ -35,6 +35,7 @@ days()
 function holiday(feriados){
   const buttonsContainer = document.querySelector('.buttons-container');
   const btnHoliday = document.createElement('button'); 
+  const listDays = document.querySelectorAll('.holiday');
   btnHoliday.id = 'btn-holiday';
   btnHoliday.innerText = feriados;
   buttonsContainer.appendChild(btnHoliday);
