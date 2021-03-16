@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "datepickerx": "^1.0.7",
+    "pikaday": "^1.8.2"
+  }
+}

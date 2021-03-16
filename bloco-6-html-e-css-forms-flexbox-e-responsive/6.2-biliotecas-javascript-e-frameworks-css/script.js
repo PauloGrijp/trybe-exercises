@@ -11,48 +11,14 @@ const textArea = document.getElementById('resume')
 function saveForm() {
 save.addEventListener('click', (e) => {
   e.preventDefault();
-  dados.classList.add('save-dados')
+  
   for (let i = 0; i < input.length; i += 1) {
+    if (input[i].type === 'radio' && !input[i].checked) {
+      continue
+    }
     const newPara = document.createElement('p');
     newPara.innerText = input[i].value
-    dados.appendChild(newPara);
-
-
-    // if (label[i].innerText === 'Tipo') {
-    //   for (let j = 0; j < radioChecked.length; j += 1) {
-    //     if (radioChecked[j].checked) {
-    //       const newPara = document.createElement('p');
-    //       newPara.innerText = `${label[i].innerText}: ${radioChecked[j].value}`
-    //       dados.appendChild(newPara);             
-    //     }
-    //   }
-    // } else if (label[i].innerText === 'Data de início') {
-    //     let data = date.value.split('/');
-    //     let dia = data[0];
-    //     let mes = data[1];
-    //     let ano = data[2]; 
-    //     if (dia < 0 || dia > 31 || mes < 0 || mes > 12 || ano < 0) {
-    //       alert('Prencha corretamente os dados');
-    //       console.log(dia, mes, ano)
-    //     } else {
-    //       const newPara = document.createElement('p');
-    //       newPara.innerText = `${label[i].innerText}: ${input[i].value}`
-    //       dados.appendChild(newPara);
-    //     }
-    // } else if (label[i].innerText === 'Estado') {        
-    //     const newPara = document.createElement('p');
-    //     const textSelected = select.options[select.selectedIndex].text;
-    //     newPara.innerText = `${label[i].innerText}: ${textSelected}`
-    //     dados.appendChild(newPara);
-    // } else if (label[i].innerText === 'Resumo do currículo') {
-    //     const newPara = document.createElement('p');
-    //     newPara.innerText = `${label[i].innerText}: ${textArea.value}`
-    //     dados.appendChild(newPara); 
-    // } else {
-    //     const newPara = document.createElement('p');
-    //     newPara.innerText = `${label[i].innerText}: ${input[i].value}`
-    //     dados.appendChild(newPara); 
-    // }        
+    dados.appendChild(newPara);   
   }    
 })
 }
@@ -60,8 +26,7 @@ saveForm();
 
 function clearForm(){
 const clear = document.getElementById('clear');
-clear.addEventListener('click', () => {
-  dados.classList.remove('save-dados')
+clear.addEventListener('click', () => {  
   for (let i = 0; i < input.length; i += 1){
     input[i].value = '';
   }
@@ -86,3 +51,5 @@ for (let i = 0; i < arrayStates.length; i += 1) {
 }
 } 
 addStates()
+
+
