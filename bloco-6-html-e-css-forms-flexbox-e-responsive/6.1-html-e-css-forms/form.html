@@ -8,9 +8,13 @@
   <title>Exercicio 6.1</title>
 </head>
 <body>
-  <form action="" method="GET">
+  <header class="title">
+    <h1>Formulário de cadastro</h1>
+    <p><em>Prencha o cadastro abaixo</em></p>
+  </header>
+  <form action="" method="GET" class="form" enctype="multipart/form-data">
     <fieldset>
-      <legend>Cadastro de currículo</legend>
+      <legend >Cadastro de currículo</legend>
       <label for="name">Nome</label>
       <input type="text" name="name" id="name" maxlength="40" required>  
       <br><br>
@@ -24,17 +28,43 @@
       <input type="text" name="address" id="address" maxlength="200" required>
       <br><br>
       <label for="city">Cidade</label>
-      <input type="text" name="city" id="city">
+      <input type="text" name="city" id="city" maxlength="28" required>
       <br><br>
       <label for="state">Estado</label>
-      <select name="state" id="state"></select>
+      <select name="state" id="state">
+        <option value="vazio">Escolha um estado</option>
+      </select>
       <br><br>
-      <label for="type">Tipo</label>
-      <input type="radio" name="type" id="casa">Casa
-      <input type="radio" name="type" id="apto">Apartamento     
-    </fieldset>
+      <label for="">Tipo</label>
+        <input type="radio" name="type" id="casa" value="casa">Casa        
+        <input type="radio" name="type" id="apto" value="apartamento">Apartamento       
+      </fieldset>
+    <br>
+    <fieldset>
+      <legend>Dados do último emprego</legend>
+      <label for="resume">Resumo do currículo</label><br>
+      <textarea name="resume" id="resume" cols="30" rows="10" required maxlength="1000"></textarea>
+      <br><br>
+      <label for="office">Cargo</label>
+      <input type="text" name="office" id="office" required maxlength="40">
+      <br><br>
+      <label for="description">Descrição do cargo</label>
+      <input type="text" name="description" id="description" required maxlength="500">
+      <br><br>
+      <label for="">Data de início</label>
+      <input type="text" name="date" id="date" required>
+    </fieldset> 
+    <div class="buttons">
+      <button id="save" type="submit">Salvar</button>
+      <button id="clear" type="button">Limpar</button>
+    </div>   
   </form>
+  <div class="dados-title">
+    <h2>Dados cadastrados</h2>
+  </div>
+  <div id="dados"></div>
 
   <script src="script.js"></script>
 </body>
-</html>
+</html> 
+
