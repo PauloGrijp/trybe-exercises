@@ -7,8 +7,9 @@
   <script src="jquery-3.6.0.min.js"></script>
   <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/node_modules/datepickerx/dist/css/DatePickerX.min.css">
+  <link rel="stylesheet" href="style.css">  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <title>Exercicio 6.1</title>
 </head>
 <body>
@@ -18,12 +19,12 @@
       <p class="text-muted"><em>Prencha o cadastro abaixo</em></p>
     </header>
     
-    <form action="" method="GET" class="jumbotron" enctype="multipart/form-data">     
+    <form data-validate-field=”field-name” action="" method="GET" class="js-form jumbotron" enctype="multipart/form-data">     
       <h2 class='my-4 text-center'>Cadastro de currículo</h2>
       <div class="form-row">
         <div class="col">          
           <label for="name">Nome</label>
-          <input class="form-control type="text" name="name" id="name" maxlength="40" required>  
+          <input class="form-control validate" data-validate="required" type="text" name="name" id="name">  
         </div>
         <div class="col">
           <label for="email">Email</label>
@@ -76,7 +77,7 @@
         </div>
         <div class="col">
           <label for="">Data de início</label>
-          <input class="form-control" type="text" name="date" id="date" required>
+          <input  class="form-control" type="text" name="date" id="date" required>
         </div>      
       </div>
       <div class="form-group">
@@ -93,7 +94,7 @@
       <div id="dados"></div>
     </div>
   </div>  
-  <script src="/node_modules/datepickerx/dist/js/DatePickerX.min.js"></script>  
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html> 
