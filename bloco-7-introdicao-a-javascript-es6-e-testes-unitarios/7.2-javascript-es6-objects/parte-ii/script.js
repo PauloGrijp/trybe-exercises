@@ -47,3 +47,15 @@ totalStudents(allLessons)
 const valueKey = (obj, pos) => Object.values(obj)[pos];
 valueKey(lesson1, 0)
 
+const validatedObj = (obj, key, value) => {
+  let igual = false;
+  for (let keys in obj) {
+    if (keys === key && obj[keys] === value) {
+      igual = true;
+    } 
+  }
+
+  return igual;
+}
+
+console.log(validatedObj(lesson3, 'materia', 'Matemática'))
