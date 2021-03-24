@@ -18,8 +18,15 @@ const lesson3 = {
   turno: 'noite',
 };
 
-function addTurno (object, key, value) {
+const addTurno = (object, key, value) => {
   object[key] = value;
 }
-addTurno(lesson2, 'turno', 'manhã');
+addTurno(lesson2, 'turno', 'manhã')
+
+const viewKeys = (obj) => {
+  return Object.keys(obj)
+}
+viewKeys(lesson2);
+
+
 
