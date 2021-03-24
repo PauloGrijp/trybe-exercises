@@ -19,6 +19,7 @@ const lesson3 = {
 };
 
 
+
 const addTurno = (object, key, value) => object[key] = value;
 addTurno(lesson2, 'turno', 'manhã')
 
@@ -42,4 +43,7 @@ const totalStudents = obj => {
   return total;
 }
 totalStudents(allLessons)
+
+const valueKey = (obj, pos) => Object.values(obj)[pos];
+valueKey(lesson1, 0)
 
