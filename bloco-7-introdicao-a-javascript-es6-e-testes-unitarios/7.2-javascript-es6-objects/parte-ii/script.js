@@ -18,15 +18,18 @@ const lesson3 = {
   turno: 'noite',
 };
 
-const addTurno = (object, key, value) => {
-  object[key] = value;
-}
+
+const addTurno = (object, key, value) => object[key] = value;
 addTurno(lesson2, 'turno', 'manhã')
 
-const viewKeys = (obj) => {
-  return Object.keys(obj)
-}
+const viewKeys = obj => Object.keys(obj)
 viewKeys(lesson2);
+
+const lengthObj = obj => Object.keys(obj).length;
+lengthObj(lesson1)
+
+const valueObj = obj => Object.values(obj)
+valueObj(lesson3)
 
 
 
