@@ -32,4 +32,14 @@ const valueObj = obj => Object.values(obj)
 valueObj(lesson3)
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
-console.log(allLessons)
+
+const totalStudents = obj => {
+  let total = 0
+  const arrayObj = Object.keys(obj)
+  for (let keys in arrayObj) {    
+    total += obj[arrayObj[keys]].numeroEstudantes;  
+  }  
+  return total;
+}
+totalStudents(allLessons)
+
