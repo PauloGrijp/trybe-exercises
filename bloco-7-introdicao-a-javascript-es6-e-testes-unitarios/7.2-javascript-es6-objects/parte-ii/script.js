@@ -50,9 +50,7 @@ valueKey(lesson1, 0)
 const validatedObj = (obj, key, value) => {
   let igual = false;
   for (let keys in obj) {
-    if (keys === key && obj[keys] === value) {
-      igual = true;
-    } 
+    if (keys === key && obj[keys] === value) igual = true; 
   }
 
   return igual;
