@@ -66,7 +66,7 @@ const books = [
 const expectedResult = false;
 
 function authorUnique() {
-  books.
+  
 }
 
 assert.strictEqual(authorUnique(), expectedResult);
