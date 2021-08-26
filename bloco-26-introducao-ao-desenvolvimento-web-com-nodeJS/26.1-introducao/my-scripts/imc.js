@@ -4,9 +4,9 @@ function imc() {
   const peso = readline.questionFloat('Qual o seu peso? ');
   const altura = readline.questionFloat('Qual a sua altura em metros? ');
   
-  const resultado = peso / Math.pow(altura, 2);
+  const resultado = (peso / Math.pow(altura, 2)).toFixed(2);
 
-  console.log(resultado.toFixed(2));
+  console.log(resultado);
 
   if (resultado < 18.5) {
     console.log('Situação: Abaixo do peso (magreza)');
